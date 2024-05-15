@@ -465,6 +465,10 @@ textarea.contact-input {
   color: var(--black);
 }
 
+.black {
+  color: black;
+}
+
 .contact-item {
   display: flex;
   align-items: center;
