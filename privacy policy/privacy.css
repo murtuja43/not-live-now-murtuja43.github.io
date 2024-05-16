@@ -23,3 +23,7 @@ h2 {
 p {
     margin-bottom: 10px;
 }
+.bold {
+    font-weight: bold;
+    color: rgb(14, 146, 1);
+}
