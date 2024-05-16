@@ -7,14 +7,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #ac8787;
     color: #333;
 }
 p {
     font-weight: bold;
 }
 .emoji {
-    font-size: 100px;
+    font-size: 120px;
     animation: spin 10s linear infinite;
 }
 @keyframes spin {
@@ -28,6 +28,16 @@ p {
 }
 
 .red {
-    color: green;
+    color: rgb(128, 30, 0);
     font-size: 1.5rem;
+}
+.green {
+    color: rgb(2, 107, 2);
+    font-size: 1.5rem;
+}
+
+.yoyo {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
 }
