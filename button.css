@@ -1,0 +1,36 @@
+.button {
+    --c: rgb(0, 0, 0); 
+    --s: .8rem; /* control the arrow size */
+    --p: calc(8*var(--s)); /* update the 8 to control the number of visible arrows */
+    
+    --_c: color-mix(in srgb,var(--c),#000 40%);
+    --_g: 0 var(--s),#0000 0 calc(2*var(--s));
+    background: 
+      conic-gradient(from 225deg at calc(100% - var(--p)) 50%,
+        var(--_c) 45deg,var(--c) 0 25%,#0000 0),
+      repeating-linear-gradient(135deg,var(--_c) var(--_g))
+      0 100%/200% 50.1% no-repeat,
+      repeating-linear-gradient( 45deg,var(--c)  var(--_g))
+      0 0   /200% 50.1% no-repeat;
+    clip-path: polygon(0 0,calc(100% - .5lh) 0,100% 50%,calc(100% - .5lh) 100%,0 100%);
+    line-height: 2;
+    padding-inline: 2rem calc(2rem + var(--p));
+    filter: drop-shadow(4px 4px 4px hsl(0 0% 0% / .5));
+    font-size: 2rem;
+    color: white;
+    border-radius: 999px 0 0 999px;
+    border: none;
+    cursor: pointer;
+    animation: m 1s linear infinite;
+  }
+  .button:hover {
+    animation-play-state: paused;
+  }
+  @keyframes m {
+    to {
+      background-position: 0 0,calc(2*sqrt(2)*var(--s)) 100%,calc(2*sqrt(2)*var(--s)) 0;
+    }
+  }
+  
+  /* html, body { height: 100%; }
+  body { margin: 0; display: grid; place-items: center; background-color: hsl(0 0% 85%); } */
