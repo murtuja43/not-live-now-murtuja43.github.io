@@ -1,7 +1,6 @@
 /* Apply filters and set the height for the body */
 .maindiv {
-    filter: blur(3px) contrast(10) hue-rotate(310deg);
-    height: 46rem;
+    filter: blur(3px) contrast(10) hue-rotate(10deg);
     display: grid;
   }
   
