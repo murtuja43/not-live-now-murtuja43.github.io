@@ -241,7 +241,9 @@ body {
 
 /* hero/home */
 .elem,
-.rotate-img { display: none; }
+.rotate-img {
+  display: none;
+}
 
 .hero {
   background-image: url("/assets/images/hero-bg.jpg");

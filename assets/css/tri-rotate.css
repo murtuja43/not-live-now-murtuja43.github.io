@@ -1,0 +1,44 @@
+/* Apply filters and set the height for the body */
+.maindiv {
+    filter: blur(3px) contrast(10) hue-rotate(310deg);
+    height: 46rem;
+    display: grid;
+  }
+  
+  /* Center the .tri element */
+  .tri {
+    margin: auto;
+    width: 100px;
+    height: 86px;
+    display: grid;
+    background: conic-gradient(from 150deg at top, #f00 60deg, #0000 0);
+  }
+  
+  /* Style each child div of the .tri element */
+  .tri > div {
+    grid-area: 1 / 1;
+    background: conic-gradient(from 150deg at top, #f00 60deg, #0000 0);
+    transform: rotate(60deg);
+    animation: a infinite 1.5s;
+  }
+  
+  /* Set transform origins for each div */
+  .div1 {
+    transform-origin: 50% 0;
+  }
+  
+  .div2 {
+    transform-origin: 100% 100%;
+  }
+  
+  .div3 {
+    transform-origin: 0 100%;
+  }
+  
+  /* Define the keyframes for the rotation animation */
+  @keyframes a {
+    to {
+      transform: rotate(300deg);
+    }
+  }
+  
