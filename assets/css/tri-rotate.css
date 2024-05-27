@@ -9,13 +9,13 @@
     width: 100px;
     height: 86px;
     display: grid;
-    background: conic-gradient(from 150deg at top, #f00 60deg, #0000 0);
+    background: conic-gradient(from 150deg at top, rgb(0, 225, 255) 60deg, #4c00ff00 0);
   }
   
   /* Style each child div of the .tri element */
   .tri > div {
     grid-area: 1 / 1;
-    background: conic-gradient(from 150deg at top, #f00 60deg, #0000 0);
+    background: conic-gradient(from 150deg at top, rgb(229, 249, 252) 60deg, #0000 0);
     transform: rotate(60deg);
     animation: a infinite 1.5s;
   }

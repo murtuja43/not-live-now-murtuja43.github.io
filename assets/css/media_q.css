@@ -186,12 +186,6 @@
       font-size: 8rem;
     }
 
-    .elem-3 {
-      bottom: 25px;
-      right: 30px;
-      font-size: 3rem;
-    }
-  
     .elem-2 .elem-title { color: var(--pink-light); }
   
     .elem-title {
